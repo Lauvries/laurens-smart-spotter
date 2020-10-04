@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
 class Room < ApplicationRecord
-  # Write your code here
+  # @name =
+  #has a name
+  #maybe capacity
+  #maybe location
 end

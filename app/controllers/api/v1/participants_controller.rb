@@ -11,3 +11,6 @@ module Api
     end
   end
 end
+
+
+#logic for inviting
