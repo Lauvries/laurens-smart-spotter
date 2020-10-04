@@ -3,6 +3,13 @@
 class User < ApplicationRecord
   has_secure_password
 
+  def initialize(attributes = {})
+    @name = attributes[:name]
+    @email = attributes[:email]
+    @password = attributes[:password]
+    @password_confirmation = attributes[:password_confirmation]
+  end
+
   # write your code here
 
   has_many :bookings, dependent: :destroy
